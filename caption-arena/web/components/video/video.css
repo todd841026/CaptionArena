@@ -1,0 +1,214 @@
+#Share{
+	    background-color: #F7F7F7;
+}
+#doc3{
+	margin: 0;
+}
+.video-header {
+	width: 100%;
+	height: 67px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #24afaa;
+}
+.video-header > .logo{
+	float: left;
+	width: 224px;
+	height: 60px;
+	margin-left: 325px;
+	background :#24afaa url(images/logo.png) no-repeat left center;
+	background-size: 100%;
+}
+.video-header > .pic{
+	float: right;
+    width: 36px;
+    height: 64px;
+    margin-right: 233px;
+	background :#24afaa url(images/pic.png) no-repeat left center;
+	background-size: 100%;
+}
+.video-header > ul {
+	float: left;
+	margin-left: 1px;
+	width: 350px;
+	font-size: 14px;
+}
+.video-header > ul > li{
+	display: inline-block;
+}
+.video-header > ul > li > a{
+	display: block;
+	width: 66px;
+	float: left;
+	color: #fff!important;
+	text-decoration: none;
+	cursor: pointer;
+}
+.video-header > ul > li > a:hover{
+	background-color: #149891;
+	color: #fff!important;
+}
+.navbar_ist{
+	width: 87px;
+}
+.navbar-form{
+	display: inline-block;
+	float: left;
+	margin-top:12px;
+	}
+.form-control{
+	display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 5px 6px 30px;
+    color:#fff;
+    background:url(images/search.png) 0 center no-repeat;
+    border: none;
+    border: 0px solid #50bfb9;
+    border-bottom: 1px solid #50bfb9;
+    border-radius: 0px; 
+    -webkit-box-shadow:none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition:none;
+}
+.form-group > input{
+	padding-left: 30px!important;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px){
+.navbar-nav {
+    float: left;
+    margin: 0;
+    margin-left:50px;
+}
+}
+.breadcrumb{background:none;padding:5px 0;}
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: ">\00a0";
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999 !important;  
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999 !important;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #999 !important;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #999 !important;
+}
+.editInput{
+	width: 650px!important;;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    margin-top:20px;
+    background-color:#e4e4e4;
+    margin-left:20px;
+}
+.uploadInput{
+	width: 502px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    margin-top:20px;
+    background-color:#e4e4e4;
+    margin-left:417px;
+}
+.btn-default{
+	border-radius: 4px;
+	padding:12px 40px;
+	background-color:#24afa8;color:#fff;border-color:#24afa8}
+.btn-nocolor{
+	padding:12px 50px;
+	background-color:#f7f7f7;color:#646464;border-color:#ccc;
+	margin-left:100px;
+}
+.btn-default:hover{
+	background-color:#149891;color:#fff;border-color:#149891;
+}
+.submit{width:300px;margin-top:15px;margin-left:60px}
+.submittip{margin-top:10px;}
+.center{padding:0 28%;}
+.adjust{float:left; margin-top: 21px;}
+.adjust .lbtn{background:url(images/lbtn.png) no-repeat;
+	height: 45px;
+    border: none;
+    width: 17px;}
+.adjust .time{background:url(images/time.png) no-repeat;
+	height: 48px;
+    border: none;
+    width: 50px;
+    margin:0 10px;
+    display:inline-block;
+}
+.adjust .rbtn{background:url(images/rbtn.png) no-repeat;
+	height: 45px;
+    border: none;
+    width: 17px;
+}
+
+
+
+
+
+
+.container{
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container1{
+    overflow: hidden;
+    width: 100%;
+    max-width: 1370px;
+    margin: 0 auto;
+}
+.breadcrumb{
+    margin-bottom: 20px;
+}
+.breadcrumb li{
+    display: inline-block;
+}
+.breadcrumb li a{
+    color: #337ab7;
+}
+.center p{
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.uploadBtn{
+	width: 138px!important; 
+    margin-left: 223px !important;
+    margin-top: 20px !important;
+    height: 47px !important;
+    background-color: #FFFFFF !important;
+   /*  background-color: #f7f7f7 !important;*/ 
+    color: #646464 !important;
+    border-color: #ccc !important;
+}
+.uploadBtn:hover {
+}
+.uploadBtn:active {
+}
