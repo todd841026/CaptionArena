@@ -1,0 +1,5 @@
+<webscript>
+  <shortname>videoName</shortname>
+  <description>upload video name</description>
+  <url>/components/videotest/videoName</url>
+</webscript>

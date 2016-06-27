@@ -1,0 +1,5 @@
+<webscript>
+  <shortname>caUpload</shortname>
+  <description>Caption Arena upload</description>
+  <url>/components/videotest/caUpload</url>
+</webscript>

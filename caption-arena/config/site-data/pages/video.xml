@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<page>
+   <title>video</title>
+   <title-id>page.video.title</title-id>
+   <description>video player</description>
+   <description-id>page.video.description</description-id>
+   <template-instance>video</template-instance>
+   <authentication>none</authentication>
+   
+</page>
