@@ -14,9 +14,9 @@
 			</div>
 			<div class="">
 					<div class="adjust">
-						<button class="lbtn" id="lbtn" onclick="backSecond()"></button>
+						<button class="lbtn" id="lbtn" onclick="lefttime()"></button>
 						<span class="time"></span>
-						<button class="rbtn" onclick="forwardSecond()"></button>
+						<button class="rbtn" onclick="righttime()"></button>
 				</div>
 				<div class="editarena">
 						<input class="editInput"  type="text" id="editInputCa" placeholder="请点击此处编辑字幕"  id="time2" />

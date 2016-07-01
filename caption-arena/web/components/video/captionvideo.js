@@ -5,10 +5,10 @@ function videoHTML(videoNumber, nodeId, srtId) {
 			+ videoNumber
 			+ '.png"'
 			+ 'data-setup=\'{"example_option":true}\'>'
-			+ '\t<source src="http://172.16.53.137:8080/alfresco/service/api/external/node/content/'
+			+ '\t<source src="http://localhost:8080/alfresco/s/api/external/node/content/workspace/SpaceStore/'
 			+ nodeId
 			+ '" type="video/mp4" /> \n'
-			+ '\t\t<track id="video-srt" kind="captions" src="http://172.16.53.137:8080/alfresco/service/api/external/node/contentsrt/'
+			+ '\t\t<track id="video-srt" kind="captions" src="http://localhost:8080/alfresco/s/api/external/node/contentsrt/workspace/SpaceStore/'
 			+ srtId
 			+ '" srclang="it" label="Italian" default/>\n '
 			+ '\t\t<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>\n'
@@ -38,7 +38,7 @@ $(document)
 					player = videojs('#video-js');
 
 					$.ajax({
-								url : "http://172.16.53.137:8080/alfresco/service/api/external/node/contentsrt/"
+								url : "http://localhost:8080/alfresco/s/api/external/node/contentsrt/workspace/SpaceStore/"
 										+ _srtId,
 								cache : false,
 								success : function(response) {
@@ -62,7 +62,9 @@ $(document)
 															if (timeupdate >= obStartTime
 																	&& timeupdate <= obEndTime) {
 																currentid = i;
+																contentsrtitem="";
 																contentsrtitem = content;
+																$("#editInputCa").val(contentsrtitem);
 																// $scope.content
 																// =
 																// content;

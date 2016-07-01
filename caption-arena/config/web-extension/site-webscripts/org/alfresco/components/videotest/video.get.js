@@ -6,19 +6,20 @@ function main() {
 		var resultJson = JSON.parse(result);
 		var videoNode = resultJson.videoNode;
 		var srtNode = resultJson.srtNode;
-		var widget = {
-			id : "CaptionVideo",
-			name : "Alfresco.CaptionVideo",
-			options : {
-				videoNodeRef : videoNode,
-				srtNodeRef : srtNode
-			}
-		};
-		model.widgets = [ widget ];
+		model.nodeId = "50347914-7ef0-4385-966a-41ff5d745a8c";
+		model.srtId = "e76000dc-ca13-46e7-9eaa-bc9eaed0fddd";
+//		if(videoNode == "" ){
+//			model.nodeId = "50347914-7ef0-4385-966a-41ff5d745a8c";
+//			model.srtId = "e76000dc-ca13-46e7-9eaa-bc9eaed0fddd";
+//		}else{
+//			model.nodeId = videoNode;
+//			model.srtId = srtNode;
+//		}
+		
 	} else {
 
-		model.nodeId = "todddddd";
-		model.srtId = "dddd";
+		model.nodeId = "50347914-7ef0-4385-966a-41ff5d745a8c";
+		model.srtId = "e76000dc-ca13-46e7-9eaa-bc9eaed0fddd";
 	}
 
 }
