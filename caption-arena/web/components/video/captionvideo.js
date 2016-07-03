@@ -1,9 +1,7 @@
 function videoHTML(videoNumber, nodeId, srtId) {
 	return '<video id="video-js" class="video-js vjs-default-skin" '
 			+ 'controls preload="auto" width="1024" height="420" '
-			+ 'poster="img/'
-			+ videoNumber
-			+ '.png"'
+			+ 'poster="/res/components/video/images/pic.png"'
 			+ 'data-setup=\'{"example_option":true}\'>'
 			+ '\t<source src="http://localhost:8080/alfresco/s/api/external/node/content/workspace/SpaceStore/'
 			+ nodeId
@@ -44,30 +42,21 @@ $(document)
 								success : function(response) {
 									srt = response;
 									myData = srtx.parse(srt);
-									player
-											.on(
-													'timeupdate',
-													function() {
+									player.on('timeupdate',function() {
 														// $scope.$apply(function()
 														// {
-														timeupdate = player
-																.currentTime();
+														timeupdate = player.currentTime();
 														for ( var i in myData) {
 															var ob = myData[i];
 															var obStartTime = parseFloat(ob["time"]["start"]);
 															var obEndTime = parseFloat(ob["time"]["end"]);
-															var content = ob["content"]
-																	.join(",");
 															// 要添加项的时间段正好在循环项时间段之间
-															if (timeupdate >= obStartTime
-																	&& timeupdate <= obEndTime) {
+															$("#editInputCa").val("");
+															if (timeupdate >= obStartTime && timeupdate <= obEndTime) {
 																currentid = i;
-																contentsrtitem="";
+																var content = ob["content"].join(",");
 																contentsrtitem = content;
 																$("#editInputCa").val(contentsrtitem);
-																// $scope.content
-																// =
-																// content;
 																return;
 															}
 														}
@@ -89,7 +78,7 @@ $(document)
 										if (isPlay) {
 											alert("必须暂停才可以编辑！");
 										} else {
-											console.log('update');
+											console.log('update:'+currentid);
 											editData(Number(currentid) + 1);
 										}
 									}
@@ -136,7 +125,14 @@ function righttime() {
 	player.currentTime(newTime);
 };
 function editData(id) {
-	srtx.editSrt(myData, id, contentsrtitem)
+	var ob = myData[id-1];
+	var obStartTime = parseFloat(ob["time"]["start"]);
+	var obEndTime = parseFloat(ob["time"]["end"]);
+	if (timeupdate >= obStartTime && timeupdate <= obEndTime) {
+		srtx.editSrt(myData, id, $("#editInputCa").val());
+	}else{
+		addData();
+	}
 };
 
 function deleteData(id) {

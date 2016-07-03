@@ -37,7 +37,7 @@ body{
 .navbar{
 	min-height: 62px;
 	height:62px;
-
+	padding:5px 0;
 }
 .nav > li > a{
 	padding:21px 20px;

@@ -7,7 +7,7 @@ function main() {
 		var videoNode = resultJson.videoNode;
 		var srtNode = resultJson.srtNode;
 		model.nodeId = "50347914-7ef0-4385-966a-41ff5d745a8c";
-		model.srtId = "e76000dc-ca13-46e7-9eaa-bc9eaed0fddd";
+		model.srtId = "b8c224d9-0aaa-4673-9c05-4de6640049be";
 //		if(videoNode == "" ){
 //			model.nodeId = "50347914-7ef0-4385-966a-41ff5d745a8c";
 //			model.srtId = "e76000dc-ca13-46e7-9eaa-bc9eaed0fddd";
@@ -19,7 +19,7 @@ function main() {
 	} else {
 
 		model.nodeId = "50347914-7ef0-4385-966a-41ff5d745a8c";
-		model.srtId = "e76000dc-ca13-46e7-9eaa-bc9eaed0fddd";
+		model.srtId = "b8c224d9-0aaa-4673-9c05-4de6640049be";
 	}
 
 }
