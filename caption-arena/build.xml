@@ -63,11 +63,11 @@
 		<touch file="${web.dir}/modules/about-user-min.js" />
 
 		<echo>Compressing Slingshot Javascript...</echo>
-		<!-- <apply executable="java" parallel="false" dest="${web.dir}"> <fileset 
+		 <apply executable="java" parallel="false" dest="${web.dir}"> <fileset 
 			dir="${web.dir}"> <include name="**/*.js" /> <exclude name="**/*-min.js" 
 			/> </fileset> <arg line="-jar" /> <arg path="${yui-compressor}" /> <arg line="-o" 
 			/> <targetfile /> <srcfile /> <mapper type="glob" from="*.js" to="*-min.js" 
-			/> </apply> -->
+			/> </apply> 
 	</target>
 
 	<target name="setup"

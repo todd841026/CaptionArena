@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template-instance>
+   <template-type>org/alfresco/caption</template-type>
+   <components>
+      <!-- video -->
+      <component>
+         <region-id>caption</region-id>
+         <url>/components/caption/home</url>
+      </component>
+   </components>
+</template-instance>

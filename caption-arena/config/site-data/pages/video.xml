@@ -5,6 +5,5 @@
    <description>video player</description>
    <description-id>page.video.description</description-id>
    <template-instance>video</template-instance>
-   <authentication>none</authentication>
-   
+   <authentication>none</authentication>   
 </page>

@@ -61,7 +61,7 @@
 						<button class="rbtn" onclick="righttime()"></button>
 				</div>
 				<div class="editarena">
-						<input class="editInput"  type="text" id="editInputCa" placeholder="请点击此处编辑字幕" onfocus="focusText()" id="time2" />
+						<input class="editInput"  type="text" id="editInputCa" placeholder="请点击此处编辑字幕" onfocus="focusText()"  id="time2" />
 						<button class="btn btn-default" id="btn_madeCa" onclick="upjson()">确定</button>
 				</div>
 				<div class="center" >

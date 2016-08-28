@@ -1,15 +1,12 @@
+
+
 <@markup id="css" >
    <#-- CSS Dependencies -->
-    <@link rel="stylesheet" type="text/css" href="${url.context}/res/components/documentlibrary/toolbar.css" group="documentlibrary"/>
-   <@link rel="stylesheet" type="text/css" href="${url.context}/res/components/documentlibrary/documentlist_v2.css" group="documentlibrary"/>
+   <@link href="${url.context}/res/components/caption/css/bootstrap.min.css"/>
+   <@link href="${url.context}/res/components/caption/css/index.css"/>
 </@>
 
 <@markup id="js">
-		  <@script type="text/javascript" src="${url.context}/res/components/documentlibrary/toolbar.js" group="documentlibrary"/>
-		 <@script type="text/javascript" src="${url.context}/res/${dep}" group="documentlibrary"/>
+		<@script src="${url.context}/res/components/caption/js/jquery-1.12.1.min.js"/>
+		<@script src="${url.context}/res/components/caption/js/bootstrap.min.js"/>
 </@>
-
-<@markup id="widgets">
-   <@createWidgets group="documentlibrary"/>
-</@>
-

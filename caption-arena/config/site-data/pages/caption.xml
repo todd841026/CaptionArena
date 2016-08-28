@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<page>
+   <title>caption</title>
+   <title-id>page.caption.title</title-id>
+   <description>Caption</description>
+   <description-id>page.caption.description</description-id>
+   <template-instance>caption</template-instance>
+   <authentication>none</authentication>
+   
+</page>
