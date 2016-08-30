@@ -27,9 +27,7 @@
                 <li><a href="#amusement">娱乐</a></li>
             </ul>
             <form class="navbar-form navbar-right" role="search">
-                <button type="button" class="btn btn-caption" onclick="javascript:window.location.href='arenaUpload'">
-                    求字幕
-                </button>
+                <button type="button" class="btn btn-caption" onclick="javascript:window.location.href='arenaUpload'">求字幕</button>
                 <span class="login">登录</span><span class="register">注册</span>
                 <div class="form-group">
                     <div class="input-group">
@@ -40,133 +38,149 @@
         </div>
     </div>
 </nav>
-<div class="container-fluid" style="padding:0px">
-    <div class="banner">
-        <section id="dg-container" class="dg-container">
-            <div class="dg-wrapper">
-                <a href="#" link="">
-                    <img src="${url.context}/res/components/caption/imgs/1.png">
-                </a>
-                <a href="#" link="">
-                    <img src="${url.context}/res/components/caption/imgs/2.jpg">
-                </a>
-                <a href="#" link="">
-                    <img src="${url.context}/res/components/caption/imgs/3.jpg">
-                </a>
-
-                <a href="#" link="">
-                    <img src="${url.context}/res/components/caption/imgs/3.jpg">
-                </a>
-                <a href="#" link="">
-                    <img src="${url.context}/res/components/caption/imgs/2.jpg">
-                </a>
-            </div>
-            <ol class="button" id="lightButton">
-                <li index="0">
-                <li index="1">
-                <li index="2">
-                <li index="3">
-                <li index="4">
-            </ol>
-            <nav>
-                <span class="dg-prev"></span>
-                <span class="dg-next"></span>
-            </nav>
-        </section>
-    </div>
-
-
-</div>
-<div class="container">
-    <div class="alert alert-user" role="alert">
-        <strong>Klinge:发布了第一个视频!</strong>冰风之吻:Lorem ipsum dolor sot amet, consectetur adipisicong elit, sed do eiusmod
-        tempor incididunt ut labore etdolore magna qliqua.
-    </div>
-    <div id="up-to-date" class="panel panel-default">
-        <div class="panel-heading news"><span class="rmark">最新发布</span></div>
-        <div class="panel-body">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-3 col-md-3">
-                        <img src="${url.context}/res/components/caption/imgs/pic-s1.png"/>
-                        <span class="desc">Crash Course - Ecology #12</span>
-                    </div>
-                    <div class="col-xs-3 col-md-3"><img src="${url.context}/res/components/caption/imgs/pic-s1.png"/>
-                        <span class="desc">How Memories Form and How We Lose</span></div>
-                    <div class="col-xs-3 col-md-3"><img src="${url.context}/res/components/caption/imgs/pic-s1.png"/>
-                        <span class="desc">How Memories Form and How We Lose</span></div>
-                    <div class="col-xs-3 col-md-3"><img src="${url.context}/res/components/caption/imgs/pic-s1.png"/>
-                        <span class="desc">How Memories Form and How We Lose</span></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="Coptic" class="panel panel-default">
-        <div class="panel-heading tech">
-            <span class="rmark" style="width:70px">科普</span>
-        </div>
-        <div class="panel-body">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-6 col-md-6"><img
-                            src="${url.context}/res/components/caption/imgs/pic-lg1.png"/><span class="desc">How Memories Form and How We Lose</span>
-                    </div>
-                    <div class="col-xs-6 col-md-6">
-                        <div class="row">
-                            <div class="col-xs-6 col-md-6"><img
-                                    src="${url.context}/res/components/caption/imgs/pic-lg1.png"/><span class="desc">How Memories Form and How We Lose</span>
-                            </div>
-                            <div class="col-xs-6 col-md-6"><img
-                                    src="${url.context}/res/components/caption/imgs/pic-lg1.png"/><span class="desc">How Memories Form and How We Lose</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6 col-md-6"><img
-                                    src="${url.context}/res/components/caption/imgs/pic-lg1.png"/><span class="desc">How Memories Form and How We Lose</span>
-                            </div>
-                            <div class="col-xs-6 col-md-6"><img
-                                    src="${url.context}/res/components/caption/imgs/pic-lg1.png"/><span class="desc">How Memories Form and How We Lose</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="amusement" class="panel panel-default">
-        <div class="panel-heading enter">
-            <span class="rmark" style="width:70px">娱乐</span>
-        </div>
-        <div class="panel-body">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-6 col-md-6"><img
-                            src="${url.context}/res/components/caption/imgs/pic-lg1.png"/><span class="desc">How Memories Form and How We Lose</span>
-                    </div>
-                    <div class="col-xs-6 col-md-6">
-                        <div class="row">
-                            <div class="col-xs-6 col-md-6"><img
-                                    src="${url.context}/res/components/caption/imgs/pic-lg1.png"/><span class="desc">How Memories Form and How We Lose</span>
-                            </div>
-                            <div class="col-xs-6 col-md-6"><img
-                                    src="${url.context}/res/components/caption/imgs/pic-lg1.png"/><span class="desc">How Memories Form and How We Lose</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6 col-md-6"><img
-                                    src="${url.context}/res/components/caption/imgs/pic-lg1.png"/><span class="desc">How Memories Form and How We Lose</span>
-                            </div>
-                            <div class="col-xs-6 col-md-6"><img
-                                    src="${url.context}/res/components/caption/imgs/pic-lg1.png"/><span class="desc">How Memories Form and How We Lose</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div id="wrap">
+	<div class="container-fluid" style="padding:0px">
+	    <div class="banner">
+	        <section id="dg-container" class="dg-container">
+	            <div class="dg-wrapper">
+	                <a href="#" link="">
+	                    <img src="${url.context}/res/components/caption/imgs/1.png">
+	                </a>
+	                <a href="#" link="">
+	                    <img src="${url.context}/res/components/caption/imgs/2.jpg">
+	                </a>
+	                <a href="#" link="">
+	                    <img src="${url.context}/res/components/caption/imgs/3.jpg">
+	                </a>
+	
+	                <a href="#" link="">
+	                    <img src="${url.context}/res/components/caption/imgs/3.jpg">
+	                </a>
+	                <a href="#" link="">
+	                    <img src="${url.context}/res/components/caption/imgs/2.jpg">
+	                </a>
+	            </div>
+	            <ol class="button" id="lightButton">
+	                <li index="0">
+	                <li index="1">
+	                <li index="2">
+	                <li index="3">
+	                <li index="4">
+	            </ol>
+	            <nav>
+	                <span class="dg-prev"></span>
+	                <span class="dg-next"></span>
+	            </nav>
+	        </section>
+	    </div>
+	</div>
+	<div class="container">
+	    <div class="alert alert-user" role="alert">
+	        <strong>Klinge:发布了第一个视频!</strong>冰风之吻:Lorem ipsum dolor sot amet, consectetur adipisicong elit, sed do eiusmod
+	        tempor incididunt ut labore etdolore magna qliqua.
+	    </div>
+	    <div id="up-to-date" class="panel panel-default">
+	        <div class="panel-heading news"><span class="rmark">最新发布</span></div>
+	        <div class="panel-body">
+	            <div class="container-fluid">
+	                <div class="row">
+	                    <div class="col-xs-3 col-md-3">
+	                        <img src="${url.context}/res/components/caption/imgs/pic-n1.png"/>
+	                        <span class="desc">Crash Course - Ecology #12</span>
+	                    </div>
+	                    <div class="col-xs-3 col-md-3">
+	                    	<img src="${url.context}/res/components/caption/imgs/pic-n2.png"/>
+	                        <span class="desc">How Memories Form and How We Lose</span>
+	                    </div>
+	                    <div class="col-xs-3 col-md-3">
+	                    	<img src="${url.context}/res/components/caption/imgs/pic-n3.png"/>
+	                        <span class="desc">How Memories Form and How We Lose</span>
+	                    </div>
+	                    <div class="col-xs-3 col-md-3">
+	                    	<img src="${url.context}/res/components/caption/imgs/pic-n4.png"/>
+	                        <span class="desc">How Memories Form and How We Lose</span>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	
+	    <div id="Coptic" class="panel panel-default">
+	        <div class="panel-heading tech">
+	            <span class="rmark" style="width:70px">科普</span>
+	        </div>
+	        <div class="panel-body">
+	            <div class="container-fluid">
+	                <div class="row">
+	                    <div class="col-xs-6 col-md-6">
+	                    	<img src="${url.context}/res/components/caption/imgs/pic-lg1.png"/>
+	                    	<span class="desc">How Memories Form and How We Lose</span>
+	                    </div>
+	                    <div class="col-xs-6 col-md-6">
+	                        <div class="row">
+	                            <div class="col-xs-6 col-md-6">
+	                            	<img src="${url.context}/res/components/caption/imgs/pic-n2.png"/>
+	                            	<span class="desc">How Memories Form and How We Lose</span>
+	                            </div>
+	                            <div class="col-xs-6 col-md-6">
+	                            	<img src="${url.context}/res/components/caption/imgs/pic-n5.png"/>
+	                            	<span class="desc">How Memories Form and How We Lose</span>
+	                            </div>
+	                        </div>
+	                        <div class="row">
+	                            <div class="col-xs-6 col-md-6">
+	                            	<img src="${url.context}/res/components/caption/imgs/pic-n6.png"/>
+	                            	<span class="desc">How Memories Form and How We Lose</span>
+	                            </div>
+	                            <div class="col-xs-6 col-md-6">
+	                            	<img src="${url.context}/res/components/caption/imgs/pic-n1.png"/>
+	                            	<span class="desc">How Memories Form and How We Lose</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	
+	    <div id="amusement" class="panel panel-default">
+	        <div class="panel-heading enter">
+	            <span class="rmark" style="width:70px">娱乐</span>
+	        </div>
+	        <div class="panel-body">
+	            <div class="container-fluid">
+	                <div class="row">
+	                    <div class="col-xs-6 col-md-6">
+		                    <img src="${url.context}/res/components/caption/imgs/yl-1.png"/>
+		                    <span class="desc">How Memories Form and How We Lose</span>
+	                    </div>
+	                    <div class="col-xs-6 col-md-6">
+	                        <div class="row">
+	                            <div class="col-xs-6 col-md-6">
+	                            	<img src="${url.context}/res/components/caption/imgs/pic-n5.png"/>
+	                            	<span class="desc">How Memories Form and How We Lose</span>
+	                            </div>
+	                            <div class="col-xs-6 col-md-6">
+	                            	<img src="${url.context}/res/components/caption/imgs/pic-n7.png"/>
+	                            	<span class="desc">How Memories Form and How We Lose</span>
+	                            </div>
+	                        </div>
+	                        <div class="row">
+	                            <div class="col-xs-6 col-md-6">
+	                            	<img src="${url.context}/res/components/caption/imgs/pic-n3.png"/>
+	                            	<span class="desc">How Memories Form and How We Lose</span>
+	                            </div>
+	                            <div class="col-xs-6 col-md-6">
+	                            	<img src="${url.context}/res/components/caption/imgs/pic-n8.png"/>
+	                            	<span class="desc">How Memories Form and How We Lose</span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
 </div>
 
 

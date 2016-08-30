@@ -48,13 +48,12 @@
 				<li><a href="#">返回</a></li>
 	            <li class="active">Mad Max</li>
 			</ol>
-				<input type="hidden" value=${nodeId} id = "in2"/>
-				<input type="hidden" value=${srtId} id = "in3"/>
+				<input type="hidden" value="${srtId}" id = "in3"/>
 			 <div id="video-player">
 					<div class="video-background">
-						<video id="video-js" class="video-js vjs-default-skin" controls preload="auto" width="1024" height="420" poster="/res/components/video/images/pic.png" data-setup=\'{"example_option":true}\'>
-    						<source src="http://localhost:8080/share/proxy/alfresco/api/external/node/content/${nodeRef}" type="video/mp4"/>
-    						<track id="video-srt" kind="captions" src="http://localhost:8080/share/proxy/alfresco/api/external/node/content/workspace/SpaceStore/${srtId}" srclang="it" label="Italian" default/>
+						<video id="video-js" class="video-js vjs-default-skin" controls preload="auto" width="1024" height="420" poster="${url.context}/res/components/video/images/pic.png" data-setup=\'{"example_option":true}\'>
+    						<source src="http://localhost:8080/caption/proxy/alfresco/api/external/node/content/${nodeRef}" type="video/mp4"/>
+    						<track id="video-srt" kind="captions" src="http://localhost:8080/caption/proxy/alfresco/api/external/node/content/${srtId}" srclang="it" label="Italian" default/>
     						<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
 						</video>
 					</div>
