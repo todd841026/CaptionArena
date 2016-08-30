@@ -14,6 +14,7 @@
 		    </div>
 		
 		    <!-- Collect the nav links, forms, and other content for toggling -->
+		     Collect the nav links, forms, and other content for toggling 
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		        <li class="active"><a href="#">最新 <span class="sr-only">(current)</span></a></li>
@@ -43,6 +44,36 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
    <@uniqueIdDiv>
+		    </div> /.navbar-collapse
+		  </div> /.container-fluid 
+	</nav>   -->
+   <nav class="navbar user-navbar">
+    <div class="container-fluid">
+      <div class="navbar-header user-header">
+        <a class="navbar-brand user-brand" href="caption">
+          <img alt="Caption Arena" src="${url.context}/res/components/caption/imgs/logo.png">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#" class="active">最新</a></li>
+          <li><a href="#">科普</a></li>
+          <li><a href="#">娱乐</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <button type="button" class="btn btn-caption"  onclick="javascript:window.location.href='arenaUpload'">求字幕</button>
+          <span class="login">登录</span><span class="register">注册</span>
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control search" placeholder="在这里搜索" />
+            </div>
+          </div>
+		</form>
+      </div>
+    </div>
+   </nav>
+   
+   
 		<div class="container">
 			<ol class="breadcrumb">
 				<li><a href="#">返回</a></li>
@@ -57,6 +88,10 @@
     						<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
 						</video>
 					</div>
+				<input type="hidden" value=${nodeId} id = "in2"/>
+				<input type="hidden" value=${srtId} id = "in3"/>
+			<div id="video-player">
+					<div class="video-background"></div>
 					<div class="text-background"></div>
 			</div>
 			<div class="">
