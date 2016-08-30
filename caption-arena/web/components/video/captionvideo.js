@@ -31,8 +31,6 @@ $(document)
 					srtx = new SRT();
 					_nodeId = $("#in2").val();
 					_srtId = $("#in3").val();
-					$('div.video-background').html(
-							videoHTML("pic", _nodeId, _srtId));
 					player = videojs('#video-js');
 
 					$.ajax({

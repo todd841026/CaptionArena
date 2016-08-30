@@ -4,6 +4,7 @@
 </@>
 <@markup id="js">
 	<@script src="${url.context}/res/components/caption/js/caupload.js"/>
+	<@script src="${url.context}/res/components/caption/js/jquery-1.12.1.min.js"/>
 </@>
 <@markup id="widgets">
 <@createWidgets/>
@@ -43,8 +44,8 @@
 		   <form class="navbar-form" role="search">
 		    <div class="form-group">
 		      <div class="input-group upload-group">
-		        <input type="text" class="form-control input-control" placeholder="请输入主标题" />
-		        <input type="text" class="form-control input-control" placeholder="请输入副标题" style="margin-top:20px"/>
+		        <input type="text" id="title" class="form-control input-control" placeholder="请输入主标题" />
+		        <input type="text" id="subhead" class="form-control input-control" placeholder="请输入副标题" style="margin-top:20px"/>
 		      </div>
 		    </div>
 		      <div style="margin-left:22%">
