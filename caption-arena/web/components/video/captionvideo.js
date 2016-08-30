@@ -79,9 +79,7 @@ function videoSrtContent(srtId){
                 console.log('暂停播放');
                 isPlay = false;
             });
-            $("#upjson").click(function(){
-            	upjson();
-            });
+            
             
             function upjson() {
 
