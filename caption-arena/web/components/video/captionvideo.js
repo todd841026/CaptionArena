@@ -14,7 +14,6 @@ var video = new Object();
 
 $(document).ready(function() {
 	var nodeRef = Alfresco.util.getQueryStringParameter('nodeRef');
-	$("#video-js").find('source').attr("src",linkVideo(nodeRef));
 		
     srtx = new SRT();
     player = videojs('#video-js');
@@ -25,7 +24,8 @@ $(document).ready(function() {
         success : function(response) {
         	console.log(response);
         	video.srtId = response.srtId;
-        	$("#video-js").find('source').after("<track id='video-srt' src='"+linkVideoSrt(video.srtId)+"'srclang='en' label= 'English' kind='caption' default>");
+        	$("#video-srt").attr("src",linkVideoSrt(video.srtId));
+        	$("#video-js").find('source').attr("src",linkVideo(nodeRef));
         	videoSrtContent(video.srtId);
         }
     });
@@ -81,7 +81,7 @@ function videoSrtContent(srtId){
             });
             
             
-            function upjson() {
+            upjson = function() {
 
                 if (isPlay) {
                     console.log("必须暂停才能编辑")
@@ -166,7 +166,7 @@ function onSubmit(){
     
     var updata = {
     	"srtId": video.srtId,
-    	"srtContent": JSON.stringify(myData)
+    	"srtContent": srtx.stringify(myData)
     }
     Alfresco.util.Ajax.request(
             {
@@ -174,8 +174,6 @@ function onSubmit(){
    			   url: Alfresco.constants.PROXY_URI+ "api/external/caption/updateSrt",
    			   requestContentType : "application/json",
    			   dataObj: updata,
-//   			   requestContentType : "application/json",
-//   			   responseContentType : "application/json",
    				successCallback:
    				{
    					fn: function(){
