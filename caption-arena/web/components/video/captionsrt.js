@@ -20,13 +20,15 @@ SRT.prototype.parse = function( file )
     for (var i = 0, len = srt.length; i < len; i++) {
 
         var fragments = srt[i].split("\n");
+        if(""===fragments[1]){
+        	continue;
+        }
         srt[i] = {
             "id" : parseInt(fragments[0]),
             "time" : parseTime(fragments[1]),
             "content" : fragments.splice(2)
         };
     }
-    console.log(JSON.stringify(srt));
     return srt;
 };
 
@@ -35,7 +37,8 @@ function parseTime( timeString ) {
     // regexp
     var regexp = /([0-9]*):([0-9]*):([0-9]*),([0-9]*) --> ([0-9]*):([0-9]*):([0-9]*),([0-9]*)/;
     var time = new RegExp( regexp ).exec(timeString);
-
+    
+    
 
     // start time
     var startHours = parseInt(time[1]) * 3600;
@@ -159,7 +162,7 @@ SRT.prototype.stringify = function( srt ) {
 
     var string = '';
 
-    for(var i = 0, len = srt.length; i < len; i++) {
+    for(var i = 0, len = srt.length; i < len-1; i++) {
         string += srt[i].id+'\n'+
             stringifyTime(srt[i].time)+'\n'+
             srt[i].content.join("\n")+
@@ -169,6 +172,7 @@ SRT.prototype.stringify = function( srt ) {
     return string;
 
     function stringifyTime( timeObj ) {
+
         var start = timeObj.start;
         var end = timeObj.end;
 

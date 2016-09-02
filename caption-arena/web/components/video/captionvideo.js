@@ -14,6 +14,8 @@ var video = new Object();
 
 $(document).ready(function() {
 	var nodeRef = Alfresco.util.getQueryStringParameter('nodeRef');
+	
+	$("#video-js").find('source').attr("src",linkVideo(nodeRef));
 		
     srtx = new SRT();
     player = videojs('#video-js');
@@ -24,8 +26,6 @@ $(document).ready(function() {
         success : function(response) {
         	console.log(response);
         	video.srtId = response.srtId;
-        	$("#video-srt").attr("src",linkVideoSrt(video.srtId));
-        	$("#video-js").find('source').attr("src",linkVideo(nodeRef));
         	videoSrtContent(video.srtId);
         }
     });
@@ -51,6 +51,7 @@ function videoSrtContent(srtId){
         cache : false,
         success : function(response) {
             srt = response;
+            console.log(srt);
             myData = srtx.parse(srt);
             player.on('timeupdate',function() {
                 timeupdate = player.currentTime();
@@ -80,9 +81,7 @@ function videoSrtContent(srtId){
                 isPlay = false;
             });
             
-            
             upjson = function() {
-
                 if (isPlay) {
                     console.log("必须暂停才能编辑")
                 } else {
