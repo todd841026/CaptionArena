@@ -21,7 +21,7 @@ $(document).ready(function() {
     player = videojs('#video-js');
     
     $.ajax({
-        url : Alfresco.constants.PROXY_URI + "api/external/caption/getSrtIdByVideoId?videoId="+nodeRef,
+        url : Alfresco.constants.NOAUTH_URI + "api/external/caption/getSrtIdByVideoId?videoId="+nodeRef,
         cache : false,
         success : function(response) {
         	console.log(response);
@@ -35,19 +35,19 @@ $(document).ready(function() {
 
 //	根据nodeRef获取srtId
 function linkVideo(nodeRef){	
-	var link = Alfresco.constants.PROXY_URI + "api/external/node/content/" + nodeRef;
+	var link = Alfresco.constants.NOAUTH_URI + "api/external/node/content/" + nodeRef;
 	return link;	
 }
 
 //	根据srtId获取srt值
 function linkVideoSrt(srtId){
-	var srtlink = Alfresco.constants.PROXY_URI + "api/external/node/contentsrt/" + srtId;
+	var srtlink = Alfresco.constants.NOAUTH_URI + "api/external/node/contentsrt/" + srtId;
 	return srtlink;
 }
 
 function videoSrtContent(srtId){
 	$.ajax({
-        url : Alfresco.constants.PROXY_URI + "api/external/node/contentsrt/" + srtId,
+        url : Alfresco.constants.NOAUTH_URI + "api/external/node/contentsrt/" + srtId,
         cache : false,
         success : function(response) {
             srt = response;
@@ -55,7 +55,7 @@ function videoSrtContent(srtId){
             myData = srtx.parse(srt);
             player.on('timeupdate',function() {
                 timeupdate = player.currentTime();
-                for ( var i in myData) {
+                for ( var i=0; dataLength=myData.length, i<dataLength-1; i++) {
                     var ob = myData[i];
                     var obStartTime = parseFloat(ob["time"]["start"]);
                     var obEndTime = parseFloat(ob["time"]["end"]);
@@ -170,7 +170,7 @@ function onSubmit(){
     Alfresco.util.Ajax.request(
             {
                method: Alfresco.util.Ajax.POST,
-   			   url: Alfresco.constants.PROXY_URI+ "api/external/caption/updateSrt",
+   			   url: Alfresco.constants.NOAUTH_URI+ "api/external/caption/updateSrt",
    			   requestContentType : "application/json",
    			   dataObj: updata,
    				successCallback:

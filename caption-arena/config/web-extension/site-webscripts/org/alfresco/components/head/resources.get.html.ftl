@@ -45,6 +45,7 @@
       Alfresco.constants.PROXY_URI = window.location.protocol + "//" + window.location.host + "${url.context?js_string}/proxy/alfresco/";
       Alfresco.constants.PROXY_URI_RELATIVE = "${url.context?js_string}/proxy/alfresco/";
       Alfresco.constants.PROXY_FEED_URI = window.location.protocol + "//" + window.location.host + "${url.context?js_string}/proxy/alfresco-feed/";
+      Alfresco.constants.NOAUTH_URI = window.location.protocol + "//" + window.location.host + "${url.context?js_string}/proxy/alfresco-noauth/";
       Alfresco.constants.THEME = "${theme}";
       Alfresco.constants.URL_CONTEXT = "${url.context?js_string}/";
       Alfresco.constants.URL_RESCONTEXT = "${url.context?js_string}/res/";
