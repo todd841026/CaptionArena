@@ -31,11 +31,11 @@
 .form-fields.login .form-field > span.yui-button > .first-child {
   background-color: #2BABEE;
   border-color: #2BABEE;
-  padding:2px 5px;
+  padding: 4px 45px;
 }
 
 .form-fields.login .form-field > span.yui-button > .first-child > button {
-  color: #FFFFFF;
+  color: #56b0bb;
   font-family: Open Sans Bold,Arial,sans-serif;
 }
 
@@ -47,9 +47,10 @@
 }
 
 .login .error
-{
-   max-width: 428px;
+{       
    padding-top: 16px;
+   text-align: center;
+   padding-left: 19.5px;
 }
 
 /*
@@ -57,11 +58,11 @@
  */
  
 .form-fields.login.ENTERPRISE .form-field > span.yui-button {
-  border-color: #7BC143;
-  margin-top: 4px;
+  border-color: #96ccd2;
+
 }
 
 .form-fields.login.ENTERPRISE .form-field > span.yui-button > .first-child {
-  background-color: #7BC143;
-  border-color: #7BC143;
+  background-color: #fff;
+  border: 1px solid #96ccd2;
 }

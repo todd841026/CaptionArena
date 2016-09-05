@@ -7,9 +7,7 @@
         </div>
         <div class="collapse navbar-collapse">
             <form class="navbar-form navbar-right" role="search">
-                <button type="button" class="btn btn-caption" onclick="javascript:window.location.href='arenaUpload'">
-                    求字幕
-                </button>
+                <button type="button" class="btn btn-caption" onclick="javascript:window.location.href='arenaUpload'">求字幕</button>
                 <span class="login">登录</span><span class="register">注册</span>
                 <div class="form-group">
                     <div class="input-group">
@@ -31,7 +29,7 @@
             <video id="video-js" class="video-js vjs-default-skin" controls preload="auto" width="1024" height="420"
                    poster="${url.context}/res/components/video/images/pic.png" data-setup={"example_option":true}>
                 <source src="" type="video/mp4"/>
-                <track id="video-srt" kind="captions" src="http://123.56.24.117:8080/caption/proxy/alfresco-noauth/api/external/node/contentsrt/${srtId}" srclang="it" label="Italian" default></track>
+                <track id="video-srt" kind="captions" src="http://localhost:8080/caption/proxy/alfresco-noauth/api/external/node/contentsrt/${srtId}" srclang="it" label="Italian" default></track>
                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web
                     browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5
                         video</a></p>
