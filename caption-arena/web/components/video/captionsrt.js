@@ -17,12 +17,9 @@ SRT.prototype.parse = function( file )
 
     var srt = file.split("\n\n");
 
-    for (var i = 0, len = srt.length; i < len; i++) {
+    for (var i = 0, len = srt.length; i < len-1; i++) {
 
         var fragments = srt[i].split("\n");
-        if(""===fragments[1]){
-        	continue;
-        }
         srt[i] = {
             "id" : parseInt(fragments[0]),
             "time" : parseTime(fragments[1]),
