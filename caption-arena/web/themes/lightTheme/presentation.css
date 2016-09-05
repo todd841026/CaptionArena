@@ -650,6 +650,7 @@ span.navigation-separator-alt
 {
    border: 1px solid #96ccd2;;
    font-weight: normal;
+   font-size: 18px;
 }
 
 .share-form .yui-dt table td.yui-dt-last
@@ -1514,14 +1515,14 @@ background-color: #f5f5f5;
 :-ms-input-placeholder { color:#b7dade; }
 
 .registered-button {
+	position: relative;
+    display: inline-block;
 	width: 145px;
     height: 40px;
     color: #56b0bb;
     background-color: #fff;
     border: 1px solid #96ccd2;
-    position: relative;
-    display: inline-block;
-    
+    font-size: 16px!important; 
     border-radius: 4px;
     padding: 4px 12px;
     overflow: hidden;
@@ -1530,13 +1531,11 @@ background-color: #f5f5f5;
     line-height: 40px;
     
     float: left;
-    margin-left: 10em;	
+    margin-left: 8em;	
 }
 
 .login .yui-button
 {
-   	margin-left: 1px;
-    margin-top: 2px;
     width: 145px;
     height: 30px;
     margin-right: 5.5em

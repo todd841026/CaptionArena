@@ -64,6 +64,7 @@
             </div>
             </@markup>
          </form>
+         <div class="passwordNotKnow"><a href="#">忘记密码？</a></div>
       </@markup>
       
       <@markup id="preloader">
