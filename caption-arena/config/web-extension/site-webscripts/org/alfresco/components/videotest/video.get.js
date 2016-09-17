@@ -5,16 +5,18 @@ function main() {
 	
 	model.nodeRef = nodeRef;
 
-	 var result = remote.call("/api/external/caption/getSrtIdByVideoId?videoId="+nodeRef);
-	   if (result.status == 200 && result != "{}"&& result!= null && result!= "")
-	   {
+	 var result = remote.call("/api/external/caption/getSrtIdByVideoId?videoId=" + nodeRef);
+	 if (result.status == 200)
+	 {
 		  var response = JSON.parse(result);
-	      model.srtId = response.srtId;
-	      if(model.srtId === undefined){
-	    	  model.srtId = [];
-	      };
-	   }else{
-		  model.srtId = [];
-	   }
+		  if(response.retCode == 200){
+			  model.srtId = response.srtId;
+		  }
+		  if(response.retCode == 201){
+			  model.srtId = "";
+		  };
+	  }else{
+		  model.srtId = "";
+	  }
 }
 main();

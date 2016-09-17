@@ -15,6 +15,7 @@
 	    async: true, //请求是否异步，默认为异步，这也是ajax重要特性
 	    type: "GET",   //请求方式
 	    success: function (response) {
+	    	console.log(response.items);
 	        if (response.items) {
 	            for (var item in response.items) {
 	                var nodeId = response.items[item].nodeId;
