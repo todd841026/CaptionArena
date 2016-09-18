@@ -59,7 +59,7 @@ $(document).ready(function () {
         } else if (!isPlay && isInsert && isInsertSuccess) {
             console.log("---同一处增加不可反复确认---");
         } else if (!isPlay && !isInsert) {
-            console.log('update:' + video.currentid);
+            console.log('update:' + (video.currentid+1));
             editData(Number(video.currentid) + 1);
         }
     });
@@ -83,7 +83,7 @@ function newVideoSrt() {
         timeupdate = player.currentTime();
         var dataLength = myData.length;
         console.log("dataLength=" + dataLength);
-        console.log("---暂已插入字幕字幕---");
+        console.log("---暂无插入字幕---");
         if (dataLength) {
             for (var i = 0; i < dataLength; i++) {
                 var ob = myData[i];
@@ -122,7 +122,7 @@ function videoSrtContent() {
         url: Alfresco.constants.NOAUTH_URI + "api/external/caption/getSrtContent?srtId=" + video.srtId,
         cache: false,
         success: function (response) {
-            srt = response.srtContent;
+            var srt = response;
             console.log(srt);
             myData = srtx.parse(srt);
             player.on('timeupdate', function () {
