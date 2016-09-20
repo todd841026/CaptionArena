@@ -128,9 +128,9 @@ textarea::-webkit-input-placeholder {
 .sureBtn:hover{
 	background-color:#149891;color:#fff;border-color:#149891;
 }
-.submit{width:300px;margin-top:15px;margin-left:60px}
+
 .submittip{margin-top:10px;}
-.center{padding:0 28%;}
+.center{padding:0 28%; margin-top: 15px;}
 .adjust{float:left;margin-top:-3px;margin-left: -3px;}
 .editarena{margin-top:21px;}
 .adjust .lbtn{background:url(images/lbtn.png) no-repeat;

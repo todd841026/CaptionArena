@@ -27,9 +27,9 @@
     <div id="video-player">
         <div class="video-background">
             <video id="video-js" class="video-js vjs-default-skin" controls preload="auto" width="1024" height="420"
-                   poster="${url.context}/res/components/video/images/pic.png" data-setup={"example_option":true}>
+                   data-setup={"example_option":true}>
                 <source src="" type="video/mp4"/>
-                <track id="video-srt" kind="captions" src="http://123.56.24.117:8080/caption/proxy/alfresco-noauth/api/external/node/contentsrt/${srtId}" srclang="it" label="Italian" default></track>
+                <track id="video-srt" kind="captions" src="http://123.56.24.117:8080/caption/proxy/alfresco-noauth/api/external/caption/getSrtContent?srtId=${srtId}" srclang="en" label="English">
                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web
                     browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5
                         video</a></p>
@@ -37,18 +37,19 @@
         </div>
         <div>
 	        <div class="adjust">
-	            <button class="lbtn" id="lbtn" onclick="lefttime()"></button>
-	            <span class="time"></span>
-	            <button class="rbtn" onclick="righttime()"></button>
-	        </div>
-	        <div class="editarena">
-	            <input class="editInput" type="text" id="editInputCa" placeholder="请点击此处编辑字幕" onfocus="focusText()"/>
-	            <input class="btn btn-default" id="btn_madeCa" type="button" onclick="upjson()" value="确定">
-	        </div>
-	        <div class="center">
-	            <input class="btn btn-default submit" onclick="onSubmit()" id="submit" value="提交">
-	            <p>注: 点击“提交”按钮后，您之前所有“确定”过的字幕都将一并提交。</p>
-	        </div>
+				<button class="lbtn" id="lbtn" onclick="lefttime()"></button>
+					<span class="time"></span>
+				<button class="rbtn" onclick="righttime()"></button>
+			</div>
+			<div class="editarena">
+				<input class="editInput" type="text" id="editInputCa" placeholder="请点击此处编辑字幕" onfocus="focusText()"/>
+				<input class="btn btn-default" id="btn_madeCa" type="button" value="确定">
+			</div>
+			<div class="center">
+				<input type="button" class="btn btn-default add" id="insert" value="添加">
+				<input type="button" class="btn btn-default submit" onclick="onSubmit()" id="submit" value="提交">
+				<p>注: 点击“提交”按钮后，您之前所有“确定”过的字幕都将一并提交。</p>
+			</div>
 	    </div>
     </div>
 </div>
