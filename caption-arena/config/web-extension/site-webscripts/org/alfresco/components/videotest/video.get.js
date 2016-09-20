@@ -6,8 +6,8 @@ function main() {
 	model.nodeRef = nodeRef;
 
 	 var result = remote.call("/api/external/caption/getSrtIdByVideoId?videoId="+nodeRef);
-	   if (result.status == 200 && result != "{}"&& result!= null && result!= "")
-	   {
+	 if (result.status == 200 && result != "{}"&& result!= null && result!= "")
+	 {
 		  var response = JSON.parse(result);
 	      model.srtId = response.srtId;
 	      if(model.srtId === undefined){
