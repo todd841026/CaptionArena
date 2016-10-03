@@ -1,12 +1,10 @@
 <@markup id="css" >
-   <#-- CSS Dependencies -->
    <@link href="${url.context}/res/components/caption/css/bootstrap.min.css"/>
    <@link href="${url.context}/res/components/caption/css/index.css"/>
    <@link href="${url.context}/res/components/caption/js/jCarrousel/carrousel.css"/>
 </@>
 
 <@markup id="js">
-   <#-- JavaScript Dependencies -->
    <@script src="${url.context}/res/components/caption/js/jquery-1.12.1.min.js"/>
    <@script src="${url.context}/res/components/caption/js/bootstrap.min.js"/>
    <@script src="${url.context}/res/components/caption/js/jCarrousel/carrousel.js"/>
@@ -44,20 +42,20 @@
 	        <section id="dg-container" class="dg-container">
 	            <div class="dg-wrapper">
 	                <a href="#" link="">
-	                    <img src="${url.context}/res/components/caption/imgs/1.png">
+	                    <img src="">
 	                </a>
 	                <a href="#" link="">
-	                    <img src="${url.context}/res/components/caption/imgs/2.jpg">
+	                    <img src="">
 	                </a>
 	                <a href="#" link="">
-	                    <img src="${url.context}/res/components/caption/imgs/3.jpg">
+	                    <img src="">
 	                </a>
 	
 	                <a href="#" link="">
-	                    <img src="${url.context}/res/components/caption/imgs/3.jpg">
+	                    <img src="">
 	                </a>
 	                <a href="#" link="">
-	                    <img src="${url.context}/res/components/caption/imgs/2.jpg">
+	                    <img src="">
 	                </a>
 	            </div>
 	            <ol class="button" id="lightButton">
@@ -83,23 +81,7 @@
 	        <div class="panel-heading news"><span class="rmark">最新发布</span></div>
 	        <div class="panel-body">
 	            <div class="container-fluid">
-	                <div class="row">
-	                    <div class="col-xs-3 col-md-3">
-	                        <img src="${url.context}/res/components/caption/imgs/pic-n1.png"/>
-	                        <span class="desc">Crash Course - Ecology #12</span>
-	                    </div>
-	                    <div class="col-xs-3 col-md-3">
-	                    	<img src="${url.context}/res/components/caption/imgs/pic-n2.png"/>
-	                        <span class="desc">How Memories Form and How We Lose</span>
-	                    </div>
-	                    <div class="col-xs-3 col-md-3">
-	                    	<img src="${url.context}/res/components/caption/imgs/pic-n3.png"/>
-	                        <span class="desc">How Memories Form and How We Lose</span>
-	                    </div>
-	                    <div class="col-xs-3 col-md-3">
-	                    	<img src="${url.context}/res/components/caption/imgs/pic-n4.png"/>
-	                        <span class="desc">How Memories Form and How We Lose</span>
-	                    </div>
+	                <div class="row" id="newVideo">
 	                </div>
 	            </div>
 	        </div>
@@ -111,31 +93,11 @@
 	        </div>
 	        <div class="panel-body">
 	            <div class="container-fluid">
-	                <div class="row">
+	                <div class="row" id="kepu">
 	                    <div class="col-xs-6 col-md-6">
-	                    	<img src="${url.context}/res/components/caption/imgs/pic-lg1.png"/>
-	                    	<span class="desc">How Memories Form and How We Lose</span>
-	                    </div>
-	                    <div class="col-xs-6 col-md-6">
-	                        <div class="row">
-	                            <div class="col-xs-6 col-md-6">
-	                            	<img src="${url.context}/res/components/caption/imgs/pic-n2.png"/>
-	                            	<span class="desc">How Memories Form and How We Lose</span>
-	                            </div>
-	                            <div class="col-xs-6 col-md-6">
-	                            	<img src="${url.context}/res/components/caption/imgs/pic-n5.png"/>
-	                            	<span class="desc">How Memories Form and How We Lose</span>
-	                            </div>
+	                        <div class="row" id="kepuFisrtRow">
 	                        </div>
-	                        <div class="row">
-	                            <div class="col-xs-6 col-md-6">
-	                            	<img src="${url.context}/res/components/caption/imgs/pic-n6.png"/>
-	                            	<span class="desc">How Memories Form and How We Lose</span>
-	                            </div>
-	                            <div class="col-xs-6 col-md-6">
-	                            	<img src="${url.context}/res/components/caption/imgs/pic-n1.png"/>
-	                            	<span class="desc">How Memories Form and How We Lose</span>
-	                            </div>
+	                        <div class="row" id="kepuSecondRow">
 	                        </div>
 	                    </div>
 	                </div>
@@ -149,31 +111,11 @@
 	        </div>
 	        <div class="panel-body">
 	            <div class="container-fluid">
-	                <div class="row">
+	                <div class="row" id="yele">
 	                    <div class="col-xs-6 col-md-6">
-		                    <img src="${url.context}/res/components/caption/imgs/yl-1.png"/>
-		                    <span class="desc">How Memories Form and How We Lose</span>
-	                    </div>
-	                    <div class="col-xs-6 col-md-6">
-	                        <div class="row">
-	                            <div class="col-xs-6 col-md-6">
-	                            	<img src="${url.context}/res/components/caption/imgs/pic-n5.png"/>
-	                            	<span class="desc">How Memories Form and How We Lose</span>
-	                            </div>
-	                            <div class="col-xs-6 col-md-6">
-	                            	<img src="${url.context}/res/components/caption/imgs/pic-n7.png"/>
-	                            	<span class="desc">How Memories Form and How We Lose</span>
-	                            </div>
+	                        <div class="row" id="yeleFisrtRow">
 	                        </div>
-	                        <div class="row">
-	                            <div class="col-xs-6 col-md-6">
-	                            	<img src="${url.context}/res/components/caption/imgs/pic-n3.png"/>
-	                            	<span class="desc">How Memories Form and How We Lose</span>
-	                            </div>
-	                            <div class="col-xs-6 col-md-6">
-	                            	<img src="${url.context}/res/components/caption/imgs/pic-n8.png"/>
-	                            	<span class="desc">How Memories Form and How We Lose</span>
-	                            </div>
+	                        <div class="row" id="yeleSecondRow">
 	                        </div>
 	                    </div>
 	                </div>

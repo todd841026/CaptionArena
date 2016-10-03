@@ -71,11 +71,7 @@ function linkVideo(nodeRef) {
     return link;
 }
 
-//	根据srtId获取srt值
-function linkVideoSrt(srtId) {
-    var srtlink = Alfresco.constants.NOAUTH_URI + "api/external/node/contentsrt/" + srtId;
-    return srtlink;
-}
+
 
 //字幕文件还未做关联，创建新的字幕文件
 function newVideoSrt() {
