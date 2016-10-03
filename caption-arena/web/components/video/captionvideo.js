@@ -78,8 +78,6 @@ function newVideoSrt() {
     player.on('timeupdate', function () {
         timeupdate = player.currentTime();
         var dataLength = myData.length;
-        console.log("dataLength=" + dataLength);
-        console.log("---暂无插入字幕---");
         if (dataLength) {
             for (var i = 0; i < dataLength; i++) {
                 var ob = myData[i];
@@ -265,6 +263,13 @@ function onSubmit() {
 	            successCallback: {
 	                fn: function () {
 	                    console.log("提交成功");
+                        Alfresco.util.PopupManager.displayMessage(
+                            {
+                                text: "提交成功!"
+                            });
+                        window.setTimeout(function () {
+                            window.location.reload();
+                        }, 1000);
 	                },
 	                scope: this
 	            },
@@ -283,6 +288,13 @@ function onSubmit() {
     	            successCallback: {
     	                fn: function () {
     	                    console.log("提交成功");
+                            Alfresco.util.PopupManager.displayMessage(
+                                {
+                                    text: "提交成功!"
+                                });
+                            window.setTimeout(function () {
+                                window.location.reload();
+                            }, 1000);
     	                },
     	                scope: this
     	            },
